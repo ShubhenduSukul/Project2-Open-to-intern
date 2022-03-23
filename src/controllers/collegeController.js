@@ -57,8 +57,11 @@ const createCollege = async (req, res) => {
     if (isLogolinkreadyUsed) 
     {
       return res.status(400).send({ status: false, msg: "Logolink is already used" });
-     }
-   
+    }
+
+    if (!/(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-/]))?/.test(logoLink))
+      return res.status(400).send({ status: false, msg: " logoLink is invalid" });
+  
     let saveData = await collegeModel.create(data);
     res.status(201).send({ status: true, msg: saveData });
   } catch (error) {
