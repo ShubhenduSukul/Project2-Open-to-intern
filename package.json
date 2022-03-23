@@ -1,25 +1,31 @@
 {
-  "name": "titaniumaplus",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.4.1",
+    "mongoose": "^6.2.6",
+    "nodemon": "^2.0.15"
+  },
+  "name": "projectblogpost",
+  "description": "Blogpost Project",
   "version": "1.0.0",
-  "description": "repo for assignments and practice problems",
   "main": "index.js",
+  "devDependencies": {
+    "coffee-script": "^1.3.3"
+  },
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sabihak89/titaniumaplus.git"
+    "url": "git+https://github.com/ChakraMang/ProjectBlogPost.git"
   },
-  "author": "functionUp",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sabihak89/titaniumaplus/issues"
+    "url": "https://github.com/ChakraMang/ProjectBlogPost/issues"
   },
-  "homepage": "https://github.com/sabihak89/titaniumaplus#readme",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "mongoose": "^5.12.9"
-  }
+  "homepage": "https://github.com/ChakraMang/ProjectBlogPost#readme"
 }
